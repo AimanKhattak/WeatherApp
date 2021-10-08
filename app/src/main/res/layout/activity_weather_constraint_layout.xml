@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherConstraintLayout">
+
+
+    <ImageView
+        android:id="@+id/attock_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cloudy_sunny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/attock_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="Attock"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/attock_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/attock_currentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attock_text"
+        android:layout_marginStart="5dp"
+        android:text="Current Location"
+        app:layout_constraintStart_toEndOf="@+id/attock_image"
+        app:layout_constraintTop_toBottomOf="@+id/attock_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="78F"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/newyork_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/attock_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cloudy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attock_image" />
+
+    <TextView
+        android:id="@+id/newyork_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="New York"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/newyork_image"
+        app:layout_constraintTop_toBottomOf="@+id/attock_currentLocation" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attock_image"
+        android:layout_margin="20dp"
+        android:text="55F"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/london_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/newyork_image"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/heavy_rain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newyork_image" />
+
+
+    <TextView
+        android:id="@+id/london_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newyork_text"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="London"
+        app:layout_constraintStart_toEndOf="@+id/london_image"
+        app:layout_constraintTop_toBottomOf="@+id/newyork_text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newyork_image"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:text="62F"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/mound_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/heavy_rain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/london_image" />
+
+    <TextView
+        android:id="@+id/mound_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/islambad_text"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/islambad_image"
+        android:text="Mound, Minnesota"
+
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/mound_image"
+        app:layout_constraintTop_toBottomOf="@+id/london_text" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/islambad_image"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="66F"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/islambad_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/london_image"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/cloudy_sunny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mound_image" />
+
+    <TextView
+        android:id="@+id/islambad_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/london_text"
+        android:layout_toRightOf="@id/london_image"
+        android:text="Islamabad"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/islambad_image"
+        app:layout_constraintTop_toBottomOf="@+id/mound_text" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/london_image"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="85F"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/atlanta_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mound_image"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/sunny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/islambad_image" />
+
+    <TextView
+        android:id="@+id/atlanta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mound_text"
+        android:layout_toRightOf="@id/atlanta_image"
+        android:text="Atlanta, CA"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/atlanta_image"
+        app:layout_constraintTop_toBottomOf="@+id/islambad_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mound_image"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="69F"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
